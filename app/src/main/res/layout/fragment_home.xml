@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF6D00"
     tools:context=".HomeFragment">
 
     <TextView
         android:id="@+id/homeText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Fragment"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:text="Home Fragment"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
