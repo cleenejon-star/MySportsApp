@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mysportsapp.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.mysportsapp.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.mysportsapp.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_my_sports"
+        android:name="com.example.mysportsapp.MySportsFragment"
+        android:label="@string/title_my_sports"
+        tools:layout="@layout/fragment_my_sports" >
+        <action
+            android:id="@+id/action_navigation_my_sports_to_SportsDetailFragment"
+            app:destination="@id/sportsDetailFragment"
+            app:popUpTo="@id/navigation_my_sports" />
+        <action
+            android:id="@+id/action_navigation_my_sports_to_sportsDetailFragment"
+            app:destination="@id/sportsDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sportsDetailFragment"
+        android:name="com.example.mysportsapp.SportsDetailFragment"
+        android:label="Sports Detail"
+        tools:layout="@layout/fragment_sports_detail" />
+</navigation>

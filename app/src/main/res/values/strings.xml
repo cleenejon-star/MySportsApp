@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Sports App</string>
+    <string name="title_home">Home</string>
+    <string name="title_account">Account</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_my_sports">My Sports</string>
+</resources>
